@@ -17,7 +17,7 @@ return {
     {
       '<leader>lg',
       '<cmd>LazyGit<cr>',
-      desc = 'Open LazyGit',
+      desc = 'Open [L]azy[G]it',
     },
   },
   config = function()
