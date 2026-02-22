@@ -189,7 +189,20 @@ return {
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
-
+        rust_analyzer = {
+          settings = {
+            ['rust-analyzer'] = {
+              procMacro = {
+                enable = true,
+              },
+              cargo = {
+                buildScripts = {
+                  enable = true,
+                },
+              },
+            },
+          },
+        },
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
